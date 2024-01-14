@@ -6,7 +6,7 @@ const remote = true;
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<EmployeeList remote={remote} />} />
       </Routes>
